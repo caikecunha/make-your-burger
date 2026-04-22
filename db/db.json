@@ -77,5 +77,15 @@
       "tipo": "Finalizado"
     }
   ],
-  "burgers": []
+  "burgers": [
+    {
+      "nome": "Caike Cunha",
+      "pao": "Integral",
+      "carne": "Alcatra",
+      "opcionais": [],
+      "status": "Solicitado",
+      "id": "KU8l6MspLdg"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }
