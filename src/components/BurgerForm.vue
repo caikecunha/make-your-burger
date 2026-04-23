@@ -4,18 +4,18 @@
     <form id="burger-form" @submit="createBurger($event)">
       <div class="input-container">
         <label for="nome">Nome:</label>
-        <input type="text" id="nome" name="nome" v-model="nome" placeholder="Seu nome...">
+        <input required type="text" id="nome" name="nome" v-model="nome" placeholder="Seu nome...">
       </div>
       <div class="input-container">
         <label for="pao">Escolha o pão:</label>
-        <select name="pao" id="pao" v-model="pao">
+        <select required name="pao" id="pao" v-model="pao">
           <option value="">Selecione...</option>
           <option v-for="pao in paes" v-bind:key="pao.id">{{ pao.tipo }}</option>
         </select>
       </div>
       <div class="input-container">
         <label for="carne">Escolha a carne:</label>
-        <select name="carne" id="carne" v-model="carne">
+        <select required name="carne" id="carne" v-model="carne">
           <option value="">Selecione...</option>
           <option v-for="carne in carnes" v-bind:key="carne.id">{{ carne.tipo }}</option>
         </select>
